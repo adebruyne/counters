@@ -1,5 +1,9 @@
 import React from 'react';
+import Counter from './Counter';
 
+
+
+//React Component
 const App = () => {
   // React.createElement('h1',null, 'hello');
   return (
@@ -8,9 +12,26 @@ const App = () => {
   <h1>loe</h1>
     <button>+</button>
     <div className="counter-box">
-        <div className= "counter">3</div>
-        <div className= "counter">1</div>
-        <div className= "counter">1</div>
+       <Counter  
+       finalValue= "100" 
+       initialValue="42" 
+       />
+       <Counter  
+       finalValue= "100" 
+       initialValue="14"
+       />
+       <Counter  
+       finalValue= "100" 
+       initialValue="34"
+       />
+       <Counter  
+       finalValue= "100" 
+       initialValue="46"
+       />
+       <Counter  
+       finalValue= "100" 
+       initialValue="4"
+       />
     </div>
 
   </div>
