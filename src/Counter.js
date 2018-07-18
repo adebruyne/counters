@@ -34,7 +34,10 @@ class Counter extends React.Component {
         });
     }
 
-
+    _reportMyId = (event) => {
+        console.log(event);
+        this.props.doClick(this.props.id);
+    }
 
 
 
@@ -43,8 +46,13 @@ class Counter extends React.Component {
     render(){
         //Rule #3: must return some JSX or a call to React.CreateELement
         return (
-            <div className = 'counter'>
+            <div className = 'counter'
+            onClick={() =>{
+            this.props.doClick(this.props.id);
+            }}
+            >
             {this.state.currentValue}
+            {this.props.id}
             </div>
         );
     }
